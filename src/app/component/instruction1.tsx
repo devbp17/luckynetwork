@@ -1,14 +1,18 @@
-import React from 'react'
+import React from "react";
+type props = {
+  angka: string;
+  kalimat: string;
+};
 
-function Instruction(props) {
+function Instruction({ angka }: props, { kalimat }: props) {
   return (
-    <div className='flex flex-row w-full justify-start'>
-    <div className='flex justify-start'>
-      <p className='mr-7'>{props.angka}</p>
-      <p className='mb-3'>{props.kalimat}</p>
+    <div className="flex flex-row w-full justify-start">
+      <div className="flex justify-start">
+        <p className="mr-7">{angka}</p>
+        <p className="mb-3">{kalimat}</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default Instruction
+export default Instruction;
