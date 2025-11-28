@@ -4,7 +4,7 @@ type props = {
   kalimat: string;
 };
 
-function Instruction({ angka }: props, { kalimat }: props) {
+function Instruction({ angka, kalimat }: props) {
   return (
     <div className="flex flex-row w-full justify-start">
       <div className="flex justify-start">
